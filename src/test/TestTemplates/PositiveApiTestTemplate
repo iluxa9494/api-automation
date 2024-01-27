@@ -1,0 +1,31 @@
+import org.junit.Test;
+import ru.odnoklassniki.base.ApiTestBase;
+import ru.odnoklassniki.responses.bookmark.BookmarkAddResponse;
+import ru.odnoklassniki.tests.users.getCurrentUser.TestGetCurrentUserPositive;
+
+import java.util.logging.Logger;
+
+import static org.junit.Assert.assertTrue;
+
+/**
+ * @author
+ * @created
+ * Тесты на метод
+ * Документация url
+ */
+public class TestAddPositive extends ApiTestBase {
+    private static final Logger LOGGER = Logger.getLogger(TestGetCurrentUserPositive.class.getSimpleName());
+    private static final String VAR_NAME1 = "";
+    private static final String VAR_NAME2 = "";
+
+    @Test
+    public void testAddOwnVideoPublic() throws Exception {
+        LOGGER.info("Проверка ");
+        bindSession("","");
+//response - вызов метода
+//BookmarkAddResponse bookmarkAddResponse = okApi.getBookmarkService().add(REF_ID, BOOKMARK_TYPE);
+//assert (см поля ответа по документации) - проверка полей ответа
+//assertTrue("Ошибка в добавлении закладки", bookmarkAddResponse.getSuccess());
+        LOGGER.info("Успешно проверили добавление фото друга в закладки");
+    }
+}
