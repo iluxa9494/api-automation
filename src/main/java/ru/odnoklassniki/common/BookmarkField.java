@@ -1,7 +1,6 @@
 package ru.odnoklassniki.common;
 
-public enum BookmarkBeanField {
+public enum BookmarkField {
     REF_ID,
     BOOKMARK_TYPE;
-
 }
